@@ -2,15 +2,15 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
-        id        = "com.moodle.moodlemobile"
+        id        = "tw.edu.weteach.m3moodlemobile"
         versionCode = "38000"
         android-versionCode = "38001"
         ios-CFBundleVersion = "3.8.0.1"
         version   = "3.8.0">
-    <name>Moodle</name>
+    <name>合作備課</name>
 
     <description>
-        Moodle official app
+        M3教育雲 合作備課 App
     </description>
 
     <author href="http://moodle.com" email="mobile@moodle.com">
