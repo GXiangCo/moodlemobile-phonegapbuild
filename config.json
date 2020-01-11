@@ -1,14 +1,14 @@
 {
     "app_id": "tw.edu.weteach.m3moodlemobile",
-    "appname": "Moodle Mobile",
-    "desktopappname": "Moodle Desktop",
+    "appname": "合作備課",
+    "desktopappname": "合作備課",
     "versioncode": 3800,
     "versionname": "3.8.0",
     "cache_update_frequency_usually": 420000,
     "cache_update_frequency_often": 1200000,
     "cache_update_frequency_sometimes": 3600000,
     "cache_update_frequency_rarely": 43200000,
-    "default_lang": "en",
+    "default_lang": "zh-tw",
     "languages": {
         "ar": "عربي",
         "bg": "Български",
@@ -37,7 +37,6 @@
         "kn": "ಕನ್ನಡ",
         "ko": "한국어",
         "lt": "Lietuvių",
-        "lv": "Latviešu",
         "mr": "मराठी",
         "nl": "Nederlands",
         "no": "Norsk - bokmål",
@@ -58,16 +57,7 @@
     "wsservice": "moodle_mobile_app",
     "wsextservice": "local_mobile",
     "demo_sites": {
-        "student": {
-            "url": "https:\/\/school.moodledemo.net",
-            "username": "student",
-            "password": "moodle"
-        },
-        "teacher": {
-            "url": "https:\/\/school.moodledemo.net",
-            "username": "teacher",
-            "password": "moodle"
-        }
+        
     },
     "font_sizes": [
         62.5,
@@ -75,7 +65,7 @@
         93.75
     ],
     "customurlscheme": "moodlemobile",
-    "siteurl": "",
+    "siteurl": "https:\/\/weteach.edu.tw",
     "sitename": "",
     "multisitesdisplay": "",
     "skipssoconfirmation": false,
