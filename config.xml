@@ -5,7 +5,7 @@
         id        = "tw.edu.weteach.m3moodlemobile"
         versionCode = "38000"
         android-versionCode = "38001"
-        ios-CFBundleVersion = "3.8.0.1"
+        ios-CFBundleVersion = "3.8.0.2"
         version   = "3.8.0">
     <name>合作備課</name>
 
