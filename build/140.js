@@ -1,24 +1,18 @@
 webpackJsonp([140],{
 
-/***/ 2021:
+/***/ 2094:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-
-// EXTERNAL MODULE: ./node_modules/@angular/core/esm5/core.js
-var core = __webpack_require__(0);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/index.js + 3 modules
-var ionic_angular = __webpack_require__(5);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/index.js + 1 modules
-var _ngx_translate_core = __webpack_require__(3);
-
-// EXTERNAL MODULE: ./src/directives/directives.module.ts + 2 modules
-var directives_module = __webpack_require__(32);
-
-// CONCATENATED MODULE: ./src/addon/blog/pages/entries/entries.ts
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonCalendarDayPageModule", function() { return AddonCalendarDayPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pipes_pipes_module__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__day__ = __webpack_require__(2247);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,44 +32,60 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 
 
-/**
- * Page that displays the list of blog entries.
- */
-var entries_AddonBlogEntriesPage = /** @class */ (function () {
-    function AddonBlogEntriesPage(params) {
-        this.userId = params.get('userId');
-        this.courseId = params.get('courseId');
-        this.cmId = params.get('cmId');
-        this.entryId = params.get('entryId');
-        this.groupId = params.get('groupId');
-        this.tagId = params.get('tagId');
-        if (!this.userId && !this.courseId && !this.cmId && !this.entryId && !this.groupId && !this.tagId) {
-            this.title = 'addon.blog.siteblogheading';
-        }
-        else {
-            this.title = 'addon.blog.blogentries';
-        }
+
+
+
+
+
+var AddonCalendarDayPageModule = /** @class */ (function () {
+    function AddonCalendarDayPageModule() {
     }
-    AddonBlogEntriesPage = __decorate([
-        Object(core["m" /* Component */])({
-            selector: 'page-addon-blog-entries',
-            templateUrl: 'entries.html',
-        }),
-        __metadata("design:paramtypes", [ionic_angular["t" /* NavParams */]])
-    ], AddonBlogEntriesPage);
-    return AddonBlogEntriesPage;
+    AddonCalendarDayPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_6__day__["a" /* AddonCalendarDayPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_3__components_components_module__["a" /* CoreComponentsModule */],
+                __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__["a" /* CoreDirectivesModule */],
+                __WEBPACK_IMPORTED_MODULE_5__pipes_pipes_module__["a" /* CorePipesModule */],
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_6__day__["a" /* AddonCalendarDayPage */]),
+                __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */].forChild()
+            ],
+        })
+    ], AddonCalendarDayPageModule);
+    return AddonCalendarDayPageModule;
 }());
 
-//# sourceMappingURL=entries.js.map
-// EXTERNAL MODULE: ./src/addon/blog/components/components.module.ts
-var components_module = __webpack_require__(753);
+//# sourceMappingURL=day.module.js.map
 
-// CONCATENATED MODULE: ./src/addon/blog/pages/entries/entries.module.ts
+/***/ }),
+
+/***/ 2247:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddonCalendarDayPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_app__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_events__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_local_notifications__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_sites__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_utils_dom__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_utils_time__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_calendar__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_calendar_offline__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_helper__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers_calendar_sync__ = __webpack_require__(416);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__core_courses_providers_courses__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__core_courses_providers_helper__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_filter_filter__ = __webpack_require__(990);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_network__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_moment__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16_moment__);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -86,14 +96,17 @@ var components_module = __webpack_require__(753);
 //
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// WITHOUT WARRANTIES OR CONDITIONS OFx ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-var entries_module___decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
 
@@ -101,279 +114,606 @@ var entries_module___decorate = (this && this.__decorate) || function (decorator
 
 
 
-var entries_module_AddonBlogEntriesPageModule = /** @class */ (function () {
-    function AddonBlogEntriesPageModule() {
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Page that displays the calendar events for a certain day.
+ */
+var AddonCalendarDayPage = /** @class */ (function () {
+    function AddonCalendarDayPage(localNotificationsProvider, navParams, network, zone, sitesProvider, navCtrl, domUtils, timeUtils, calendarProvider, calendarOffline, calendarHelper, calendarSync, eventsProvider, coursesProvider, coursesHelper, appProvider, popoverCtrl) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.domUtils = domUtils;
+        this.timeUtils = timeUtils;
+        this.calendarProvider = calendarProvider;
+        this.calendarOffline = calendarOffline;
+        this.calendarHelper = calendarHelper;
+        this.calendarSync = calendarSync;
+        this.eventsProvider = eventsProvider;
+        this.coursesProvider = coursesProvider;
+        this.coursesHelper = coursesHelper;
+        this.appProvider = appProvider;
+        this.popoverCtrl = popoverCtrl;
+        this.categories = {};
+        this.events = []; // Events (both online and offline).
+        this.onlineEvents = [];
+        this.offlineEvents = {}; // Offline events.
+        this.offlineEditedEventsIds = []; // IDs of events edited in offline.
+        this.deletedEvents = []; // Events deleted in offline.
+        this.filteredEvents = [];
+        this.canCreate = false;
+        this.loaded = false;
+        this.hasOffline = false;
+        this.isOnline = false;
+        this.filter = {
+            filtered: false,
+            courseId: null,
+            categoryId: null,
+            course: true,
+            group: true,
+            site: true,
+            user: true,
+            category: true
+        };
+        var now = new Date();
+        __WEBPACK_IMPORTED_MODULE_8__providers_calendar__["a" /* AddonCalendarProvider */].ALL_TYPES.forEach(function (name) {
+            _this.filter[name] = navParams.get(name);
+            _this.filter[name] = typeof _this.filter[name] == 'undefined' ? true : _this.filter[name];
+        });
+        this.filter.courseId = navParams.get('courseId');
+        this.filter.categoryId = navParams.get('categoryId');
+        this.filter.filtered = !!this.filter.courseId || __WEBPACK_IMPORTED_MODULE_8__providers_calendar__["a" /* AddonCalendarProvider */].ALL_TYPES.some(function (name) { return !_this.filter[name]; });
+        this.year = navParams.get('year') || now.getFullYear();
+        this.month = navParams.get('month') || (now.getMonth() + 1);
+        this.day = navParams.get('day') || now.getDate();
+        this.currentSiteId = sitesProvider.getCurrentSiteId();
+        if (localNotificationsProvider.isAvailable()) {
+            // Re-schedule events if default time changes.
+            this.obsDefaultTimeChange = eventsProvider.on(__WEBPACK_IMPORTED_MODULE_8__providers_calendar__["a" /* AddonCalendarProvider */].DEFAULT_NOTIFICATION_TIME_CHANGED, function () {
+                calendarProvider.scheduleEventsNotifications(_this.onlineEvents);
+            }, this.currentSiteId);
+        }
+        // Listen for events added. When an event is added, reload the data.
+        this.newEventObserver = eventsProvider.on(__WEBPACK_IMPORTED_MODULE_8__providers_calendar__["a" /* AddonCalendarProvider */].NEW_EVENT_EVENT, function (data) {
+            if (data && data.event) {
+                _this.loaded = false;
+                _this.refreshData(true, false, true);
+            }
+        }, this.currentSiteId);
+        // Listen for new event discarded event. When it does, reload the data.
+        this.discardedObserver = eventsProvider.on(__WEBPACK_IMPORTED_MODULE_8__providers_calendar__["a" /* AddonCalendarProvider */].NEW_EVENT_DISCARDED_EVENT, function () {
+            _this.loaded = false;
+            _this.refreshData(true, false, true);
+        }, this.currentSiteId);
+        // Listen for events edited. When an event is edited, reload the data.
+        this.editEventObserver = eventsProvider.on(__WEBPACK_IMPORTED_MODULE_8__providers_calendar__["a" /* AddonCalendarProvider */].EDIT_EVENT_EVENT, function (data) {
+            if (data && data.event) {
+                _this.loaded = false;
+                _this.refreshData(true, false, true);
+            }
+        }, this.currentSiteId);
+        // Refresh data if calendar events are synchronized automatically.
+        this.syncObserver = eventsProvider.on(__WEBPACK_IMPORTED_MODULE_11__providers_calendar_sync__["a" /* AddonCalendarSyncProvider */].AUTO_SYNCED, function (data) {
+            _this.loaded = false;
+            _this.refreshData(false, false, true);
+        }, this.currentSiteId);
+        // Refresh data if calendar events are synchronized manually but not by this page.
+        this.manualSyncObserver = eventsProvider.on(__WEBPACK_IMPORTED_MODULE_11__providers_calendar_sync__["a" /* AddonCalendarSyncProvider */].MANUAL_SYNCED, function (data) {
+            if (data && (data.source != 'day' || data.year != _this.year || data.month != _this.month || data.day != _this.day)) {
+                _this.loaded = false;
+                _this.refreshData(false, false, true);
+            }
+        }, this.currentSiteId);
+        // Update the events when an event is deleted.
+        this.deleteEventObserver = eventsProvider.on(__WEBPACK_IMPORTED_MODULE_8__providers_calendar__["a" /* AddonCalendarProvider */].DELETED_EVENT_EVENT, function (data) {
+            if (data && !data.sent) {
+                // Event was deleted in offline. Just mark it as deleted, no need to refresh.
+                _this.hasOffline = _this.markAsDeleted(data.eventId, true) || _this.hasOffline;
+                _this.deletedEvents.push(data.eventId);
+            }
+            else {
+                _this.loaded = false;
+                _this.refreshData(false, false, true);
+            }
+        }, this.currentSiteId);
+        // Listen for events "undeleted" (offline).
+        this.undeleteEventObserver = eventsProvider.on(__WEBPACK_IMPORTED_MODULE_8__providers_calendar__["a" /* AddonCalendarProvider */].UNDELETED_EVENT_EVENT, function (data) {
+            if (data && data.eventId) {
+                // Mark it as undeleted, no need to refresh.
+                var found = _this.markAsDeleted(data.eventId, false);
+                // Remove it from the list of deleted events if it's there.
+                var index = _this.deletedEvents.indexOf(data.eventId);
+                if (index != -1) {
+                    _this.deletedEvents.splice(index, 1);
+                }
+                if (found) {
+                    // The deleted event belongs to current list. Re-calculate "hasOffline".
+                    _this.hasOffline = false;
+                    if (_this.events.length != _this.onlineEvents.length) {
+                        _this.hasOffline = true;
+                    }
+                    else {
+                        var event_1 = _this.events.find(function (event) {
+                            return event.deleted || event.offline;
+                        });
+                        _this.hasOffline = !!event_1;
+                    }
+                }
+            }
+        }, this.currentSiteId);
+        this.filterChangedObserver = this.eventsProvider.on(__WEBPACK_IMPORTED_MODULE_8__providers_calendar__["a" /* AddonCalendarProvider */].FILTER_CHANGED_EVENT, function (data) {
+            _this.filter = data;
+            // Course viewed has changed, check if the user can create events for this course calendar.
+            _this.calendarHelper.canEditEvents(_this.filter['courseId']).then(function (canEdit) {
+                _this.canCreate = canEdit;
+            });
+            _this.filterEvents();
+        });
+        // Refresh online status when changes.
+        this.onlineObserver = network.onchange().subscribe(function () {
+            // Execute the callback in the Angular zone, so change detection doesn't stop working.
+            zone.run(function () {
+                _this.isOnline = _this.appProvider.isOnline();
+            });
+        });
     }
-    AddonBlogEntriesPageModule = entries_module___decorate([
-        Object(core["I" /* NgModule */])({
-            declarations: [
-                entries_AddonBlogEntriesPage,
-            ],
-            imports: [
-                directives_module["a" /* CoreDirectivesModule */],
-                components_module["a" /* AddonBlogComponentsModule */],
-                ionic_angular["l" /* IonicPageModule */].forChild(entries_AddonBlogEntriesPage),
-                _ngx_translate_core["b" /* TranslateModule */].forChild()
-            ],
-        })
-    ], AddonBlogEntriesPageModule);
-    return AddonBlogEntriesPageModule;
+    /**
+     * View loaded.
+     */
+    AddonCalendarDayPage.prototype.ngOnInit = function () {
+        this.calculateCurrentMoment();
+        this.calculateIsCurrentDay();
+        this.fetchData(true, false);
+    };
+    /**
+     * Fetch all the data required for the view.
+     *
+     * @param sync Whether it should try to synchronize offline events.
+     * @param showErrors Whether to show sync errors to the user.
+     * @return Promise resolved when done.
+     */
+    AddonCalendarDayPage.prototype.fetchData = function (sync, showErrors) {
+        var _this = this;
+        this.syncIcon = 'spinner';
+        this.isOnline = this.appProvider.isOnline();
+        var promise = sync ? this.sync() : Promise.resolve();
+        return promise.then(function () {
+            var promises = [];
+            // Load courses for the popover.
+            promises.push(_this.coursesHelper.getCoursesForPopover(_this.filter['courseId']).then(function (data) {
+                _this.courses = data.courses;
+            }));
+            // Get categories.
+            promises.push(_this.loadCategories());
+            // Get offline events.
+            promises.push(_this.calendarOffline.getAllEditedEvents().then(function (events) {
+                // Format data.
+                events.forEach(function (event) {
+                    event.offline = true;
+                    _this.calendarHelper.formatEventData(event);
+                });
+                // Classify them by month & day.
+                _this.offlineEvents = _this.calendarHelper.classifyIntoMonths(events);
+                // // Get the IDs of events edited in offline.
+                var filtered = events.filter(function (event) {
+                    return event.id > 0;
+                });
+                _this.offlineEditedEventsIds = filtered.map(function (event) {
+                    return event.id;
+                });
+            }));
+            // Get events deleted in offline.
+            promises.push(_this.calendarOffline.getAllDeletedEventsIds().then(function (ids) {
+                _this.deletedEvents = ids;
+            }));
+            // Check if user can create events.
+            promises.push(_this.calendarHelper.canEditEvents(_this.filter['courseId']).then(function (canEdit) {
+                _this.canCreate = canEdit;
+            }));
+            // Get user preferences.
+            promises.push(_this.calendarProvider.getCalendarTimeFormat().then(function (value) {
+                _this.timeFormat = value;
+            }));
+            return Promise.all(promises);
+        }).then(function () {
+            return _this.fetchEvents();
+        }).catch(function (error) {
+            _this.domUtils.showErrorModalDefault(error, 'addon.calendar.errorloadevents', true);
+        }).finally(function () {
+            _this.loaded = true;
+            _this.syncIcon = 'sync';
+        });
+    };
+    /**
+     * Fetch the events for current day.
+     *
+     * @return Promise resolved when done.
+     */
+    AddonCalendarDayPage.prototype.fetchEvents = function () {
+        var _this = this;
+        // Don't pass courseId and categoryId, we'll filter them locally.
+        return this.calendarProvider.getDayEvents(this.year, this.month, this.day).catch(function (error) {
+            if (!_this.appProvider.isOnline()) {
+                // Allow navigating to non-cached days in offline (behave as if using emergency cache).
+                return Promise.resolve({ events: [] });
+            }
+            else {
+                return Promise.reject(error);
+            }
+        }).then(function (result) {
+            var promises = [];
+            // Calculate the period name. We don't use the one in result because it's in server's language.
+            _this.periodName = _this.timeUtils.userDate(new Date(_this.year, _this.month - 1, _this.day).getTime(), 'core.strftimedaydate');
+            _this.onlineEvents = result.events;
+            _this.onlineEvents.forEach(_this.calendarHelper.formatEventData.bind(_this.calendarHelper));
+            // Schedule notifications for the events retrieved (only future events will be scheduled).
+            _this.calendarProvider.scheduleEventsNotifications(_this.onlineEvents);
+            // Merge the online events with offline data.
+            _this.events = _this.mergeEvents();
+            // Filter events by course.
+            _this.filterEvents();
+            _this.calculateIsCurrentDay();
+            // Re-calculate the formatted time so it uses the device date.
+            var dayTime = _this.currentMoment.unix() * 1000;
+            _this.events.forEach(function (event) {
+                event.ispast = _this.isPastDay || (_this.isCurrentDay && _this.isEventPast(event));
+                promises.push(_this.calendarProvider.formatEventTime(event, _this.timeFormat, true, dayTime).then(function (time) {
+                    event.formattedtime = time;
+                }));
+            });
+            return Promise.all(promises);
+        });
+    };
+    /**
+     * Merge online events with the offline events of that period.
+     *
+     * @return Merged events.
+     */
+    AddonCalendarDayPage.prototype.mergeEvents = function () {
+        var _this = this;
+        this.hasOffline = false;
+        if (!Object.keys(this.offlineEvents).length && !this.deletedEvents.length) {
+            // No offline events, nothing to merge.
+            return this.onlineEvents;
+        }
+        var monthOfflineEvents = this.offlineEvents[this.calendarHelper.getMonthId(this.year, this.month)], dayOfflineEvents = monthOfflineEvents && monthOfflineEvents[this.day];
+        var result = this.onlineEvents;
+        if (this.deletedEvents.length) {
+            // Mark as deleted the events that were deleted in offline.
+            result.forEach(function (event) {
+                event.deleted = _this.deletedEvents.indexOf(event.id) != -1;
+                if (event.deleted) {
+                    _this.hasOffline = true;
+                }
+            });
+        }
+        if (this.offlineEditedEventsIds.length) {
+            // Remove the online events that were modified in offline.
+            result = result.filter(function (event) {
+                return _this.offlineEditedEventsIds.indexOf(event.id) == -1;
+            });
+            if (result.length != this.onlineEvents.length) {
+                this.hasOffline = true;
+            }
+        }
+        if (dayOfflineEvents && dayOfflineEvents.length) {
+            // Add the offline events (either new or edited).
+            this.hasOffline = true;
+            result = this.sortEvents(result.concat(dayOfflineEvents));
+        }
+        return result;
+    };
+    /**
+     * Filter events based on the filter popover.
+     */
+    AddonCalendarDayPage.prototype.filterEvents = function () {
+        this.filteredEvents = this.calendarHelper.getFilteredEvents(this.events, this.filter, this.categories);
+    };
+    /**
+     * Sort events by timestart.
+     *
+     * @param events List to sort.
+     */
+    AddonCalendarDayPage.prototype.sortEvents = function (events) {
+        return events.sort(function (a, b) {
+            if (a.timestart == b.timestart) {
+                return a.timeduration - b.timeduration;
+            }
+            return a.timestart - b.timestart;
+        });
+    };
+    /**
+     * Refresh the data.
+     *
+     * @param refresher Refresher.
+     * @param done Function to call when done.
+     * @param showErrors Whether to show sync errors to the user.
+     * @return Promise resolved when done.
+     */
+    AddonCalendarDayPage.prototype.doRefresh = function (refresher, done, showErrors) {
+        if (this.loaded) {
+            return this.refreshData(true, showErrors).finally(function () {
+                refresher && refresher.complete();
+                done && done();
+            });
+        }
+        return Promise.resolve();
+    };
+    /**
+     * Refresh the data.
+     *
+     * @param sync Whether it should try to synchronize offline events.
+     * @param showErrors Whether to show sync errors to the user.
+     * @param afterChange Whether the refresh is done after an event has changed or has been synced.
+     * @return Promise resolved when done.
+     */
+    AddonCalendarDayPage.prototype.refreshData = function (sync, showErrors, afterChange) {
+        var _this = this;
+        this.syncIcon = 'spinner';
+        var promises = [];
+        // Don't invalidate day events after a change, it has already been handled.
+        if (!afterChange) {
+            promises.push(this.calendarProvider.invalidateDayEvents(this.year, this.month, this.day));
+        }
+        promises.push(this.calendarProvider.invalidateAllowedEventTypes());
+        promises.push(this.coursesProvider.invalidateCategories(0, true));
+        promises.push(this.calendarProvider.invalidateTimeFormat());
+        return Promise.all(promises).finally(function () {
+            return _this.fetchData(sync, showErrors);
+        });
+    };
+    /**
+     * Load categories to be able to filter events.
+     *
+     * @return Promise resolved when done.
+     */
+    AddonCalendarDayPage.prototype.loadCategories = function () {
+        var _this = this;
+        return this.coursesProvider.getCategories(0, true).then(function (cats) {
+            _this.categories = {};
+            // Index categories by ID.
+            cats.forEach(function (category) {
+                _this.categories[category.id] = category;
+            });
+        }).catch(function () {
+            // Ignore errors.
+        });
+    };
+    /**
+     * Try to synchronize offline events.
+     *
+     * @param showErrors Whether to show sync errors to the user.
+     * @return Promise resolved when done.
+     */
+    AddonCalendarDayPage.prototype.sync = function (showErrors) {
+        var _this = this;
+        return this.calendarSync.syncEvents().then(function (result) {
+            if (result.warnings && result.warnings.length) {
+                _this.domUtils.showErrorModal(result.warnings[0]);
+            }
+            if (result.updated) {
+                // Trigger a manual sync event.
+                result.source = 'day';
+                result.day = _this.day;
+                result.month = _this.month;
+                result.year = _this.year;
+                _this.eventsProvider.trigger(__WEBPACK_IMPORTED_MODULE_11__providers_calendar_sync__["a" /* AddonCalendarSyncProvider */].MANUAL_SYNCED, result, _this.currentSiteId);
+            }
+        }).catch(function (error) {
+            if (showErrors) {
+                _this.domUtils.showErrorModalDefault(error, 'core.errorsync', true);
+            }
+        });
+    };
+    /**
+     * Navigate to a particular event.
+     *
+     * @param eventId Event to load.
+     */
+    AddonCalendarDayPage.prototype.gotoEvent = function (eventId) {
+        if (eventId < 0) {
+            // It's an offline event, go to the edit page.
+            this.openEdit(eventId);
+        }
+        else {
+            this.navCtrl.push('AddonCalendarEventPage', {
+                id: eventId
+            });
+        }
+    };
+    /**
+     * Show the context menu.
+     *
+     * @param event Event.
+     */
+    AddonCalendarDayPage.prototype.openFilter = function (event) {
+        var popover = this.popoverCtrl.create(__WEBPACK_IMPORTED_MODULE_14__components_filter_filter__["a" /* AddonCalendarFilterPopoverComponent */], {
+            courses: this.courses,
+            filter: this.filter
+        });
+        popover.present({
+            ev: event
+        });
+    };
+    /**
+     * Open page to create/edit an event.
+     *
+     * @param eventId Event ID to edit.
+     */
+    AddonCalendarDayPage.prototype.openEdit = function (eventId) {
+        var params = {};
+        if (eventId) {
+            params.eventId = eventId;
+        }
+        else {
+            // It's a new event, set the time.
+            params.timestamp = __WEBPACK_IMPORTED_MODULE_16_moment__().year(this.year).month(this.month - 1).date(this.day).unix() * 1000;
+        }
+        if (this.filter['courseId']) {
+            params.courseId = this.filter['courseId'];
+        }
+        this.navCtrl.push('AddonCalendarEditEventPage', params);
+    };
+    /**
+     * Calculate current moment.
+     */
+    AddonCalendarDayPage.prototype.calculateCurrentMoment = function () {
+        this.currentMoment = __WEBPACK_IMPORTED_MODULE_16_moment__().year(this.year).month(this.month - 1).date(this.day);
+    };
+    /**
+     * Check if user is viewing the current day.
+     */
+    AddonCalendarDayPage.prototype.calculateIsCurrentDay = function () {
+        var now = new Date();
+        this.currentTime = this.timeUtils.timestamp();
+        this.isCurrentDay = this.year == now.getFullYear() && this.month == now.getMonth() + 1 && this.day == now.getDate();
+        this.isPastDay = this.year < now.getFullYear() || (this.year == now.getFullYear() && this.month < now.getMonth()) ||
+            (this.year == now.getFullYear() && this.month == now.getMonth() + 1 && this.day < now.getDate());
+    };
+    /**
+     * Go to current day.
+     */
+    AddonCalendarDayPage.prototype.goToCurrentDay = function () {
+        var _this = this;
+        var now = new Date(), initialDay = this.day, initialMonth = this.month, initialYear = this.year;
+        this.day = now.getDate();
+        this.month = now.getMonth() + 1;
+        this.year = now.getFullYear();
+        this.calculateCurrentMoment();
+        this.loaded = false;
+        this.fetchEvents().then(function () {
+            _this.isCurrentDay = true;
+        }).catch(function (error) {
+            _this.domUtils.showErrorModalDefault(error, 'addon.calendar.errorloadevents', true);
+            _this.year = initialYear;
+            _this.month = initialMonth;
+            _this.day = initialDay;
+            _this.calculateCurrentMoment();
+        }).finally(function () {
+            _this.loaded = true;
+        });
+    };
+    /**
+     * Load next month.
+     */
+    AddonCalendarDayPage.prototype.loadNext = function () {
+        var _this = this;
+        this.increaseDay();
+        this.loaded = false;
+        this.fetchEvents().catch(function (error) {
+            _this.domUtils.showErrorModalDefault(error, 'addon.calendar.errorloadevents', true);
+            _this.decreaseDay();
+        }).finally(function () {
+            _this.loaded = true;
+        });
+    };
+    /**
+     * Load previous month.
+     */
+    AddonCalendarDayPage.prototype.loadPrevious = function () {
+        var _this = this;
+        this.decreaseDay();
+        this.loaded = false;
+        this.fetchEvents().catch(function (error) {
+            _this.domUtils.showErrorModalDefault(error, 'addon.calendar.errorloadevents', true);
+            _this.increaseDay();
+        }).finally(function () {
+            _this.loaded = true;
+        });
+    };
+    /**
+     * Decrease the current day.
+     */
+    AddonCalendarDayPage.prototype.decreaseDay = function () {
+        this.currentMoment.subtract(1, 'day');
+        this.year = this.currentMoment.year();
+        this.month = this.currentMoment.month() + 1;
+        this.day = this.currentMoment.date();
+    };
+    /**
+     * Increase the current day.
+     */
+    AddonCalendarDayPage.prototype.increaseDay = function () {
+        this.currentMoment.add(1, 'day');
+        this.year = this.currentMoment.year();
+        this.month = this.currentMoment.month() + 1;
+        this.day = this.currentMoment.date();
+    };
+    /**
+     * Find an event and mark it as deleted.
+     *
+     * @param eventId Event ID.
+     * @param deleted Whether to mark it as deleted or not.
+     * @return Whether the event was found.
+     */
+    AddonCalendarDayPage.prototype.markAsDeleted = function (eventId, deleted) {
+        var event = this.onlineEvents.find(function (event) {
+            return event.id == eventId;
+        });
+        if (event) {
+            event.deleted = deleted;
+            return true;
+        }
+        return false;
+    };
+    /**
+     * Returns if the event is in the past or not.
+     * @param event Event object.
+     * @return True if it's in the past.
+     */
+    AddonCalendarDayPage.prototype.isEventPast = function (event) {
+        return (event.timestart + event.timeduration) < this.currentTime;
+    };
+    /**
+     * Page destroyed.
+     */
+    AddonCalendarDayPage.prototype.ngOnDestroy = function () {
+        this.newEventObserver && this.newEventObserver.off();
+        this.discardedObserver && this.discardedObserver.off();
+        this.editEventObserver && this.editEventObserver.off();
+        this.deleteEventObserver && this.deleteEventObserver.off();
+        this.undeleteEventObserver && this.undeleteEventObserver.off();
+        this.syncObserver && this.syncObserver.off();
+        this.manualSyncObserver && this.manualSyncObserver.off();
+        this.onlineObserver && this.onlineObserver.unsubscribe();
+        this.filterChangedObserver && this.filterChangedObserver.off();
+        this.obsDefaultTimeChange && this.obsDefaultTimeChange.off();
+    };
+    AddonCalendarDayPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-addon-calendar-day',template:/*ion-inline-start:"/Users/allen/sourcetree/moodleapp382/src/addon/calendar/pages/day/day.html"*/'<ion-header>\n    <ion-navbar core-back-button>\n        <ion-title>{{ \'addon.calendar.calendarevents\' | translate }}</ion-title>\n        <ion-buttons end>\n            <button ion-button icon-only (click)="openFilter($event)" [attr.aria-label]="\'core.filter\' | translate">\n                <ion-icon name="funnel" *ngIf="filter.filtered"></ion-icon>\n                <ion-icon name="ios-funnel-outline" *ngIf="!filter.filtered"></ion-icon>\n            </button>\n            <core-context-menu>\n                <core-context-menu-item *ngIf="!isCurrentDay" [priority]="900" [content]="\'addon.calendar.today\' | translate" [iconAction]="\'fa-calendar-times-o\'" (action)="goToCurrentDay()"></core-context-menu-item>\n                <core-context-menu-item [hidden]="!loaded || !hasOffline || !isOnline"  [priority]="400" [content]="\'core.settings.synchronizenow\' | translate" (action)="doRefresh(null, $event, true)" [iconAction]="syncIcon" [closeOnClick]="false"></core-context-menu-item>\n            </core-context-menu>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n    <ion-refresher [enabled]="loaded" (ionRefresh)="doRefresh($event)">\n        <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n    </ion-refresher>\n\n    <!-- Period name and arrows to navigate. -->\n    <ion-grid padding-top class="safe-area-page">\n        <ion-row>\n            <ion-col text-start *ngIf="currentMoment">\n                <a ion-button icon-only clear (click)="loadPrevious()" [title]="\'addon.calendar.dayprev\' | translate">\n                    <ion-icon name="arrow-back" md="ios-arrow-back"></ion-icon>\n                </a>\n            </ion-col>\n            <ion-col text-center class="addon-calendar-period">\n                <h3>{{ periodName }}</h3>\n            </ion-col>\n            <ion-col text-end *ngIf="currentMoment">\n                <a ion-button icon-only clear (click)="loadNext()" [title]="\'addon.calendar.daynext\' | translate">\n                    <ion-icon name="arrow-forward" md="ios-arrow-forward"></ion-icon>\n                </a>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n\n    <core-loading [hideUntil]="loaded" class="safe-area-page">\n        <!-- There is data to be synchronized -->\n        <ion-card class="core-warning-card" icon-start *ngIf="hasOffline">\n            <ion-icon name="warning"></ion-icon> {{ \'core.hasdatatosync\' | translate:{$a: \'core.day\' | translate} }}\n        </ion-card>\n\n        <core-empty-box *ngIf="!filteredEvents || !filteredEvents.length" icon="calendar" [message]="\'addon.calendar.noevents\' | translate">\n        </core-empty-box>\n\n        <ion-list *ngIf="filteredEvents && filteredEvents.length" no-margin>\n            <ng-container *ngFor="let event of filteredEvents">\n                <a ion-item text-wrap [title]="event.name" (click)="gotoEvent(event.id)" [class.item-dimmed]="event.ispast" class="addon-calendar-event" [ngClass]="[\'addon-calendar-eventtype-\'+event.eventtype]">\n                    <img *ngIf="event.moduleIcon" src="{{event.moduleIcon}}" item-start class="core-module-icon">\n                    <core-icon *ngIf="event.eventIcon && !event.moduleIcon" [name]="event.eventIcon" item-start></core-icon>\n                    <h2><core-format-text [text]="event.name" [contextLevel]="event.contextLevel" [contextInstanceId]="event.contextInstanceId"></core-format-text></h2>\n                    <p [innerHTML]="event.formattedtime"></p>\n                    <ion-note *ngIf="event.offline && !event.deleted" item-end>\n                        <ion-icon name="time"></ion-icon>\n                        <span text-wrap>{{ \'core.notsent\' | translate }}</span>\n                    </ion-note>\n                    <ion-note *ngIf="event.deleted" item-end>\n                        <ion-icon name="trash"></ion-icon>\n                        <span text-wrap>{{ \'core.deletedoffline\' | translate }}</span>\n                    </ion-note>\n                </a>\n            </ng-container>\n        </ion-list>\n\n        <!-- Create a calendar event. -->\n        <ion-fab core-fab bottom end *ngIf="canCreate">\n            <button ion-fab (click)="openEdit()" [attr.aria-label]="\'addon.calendar.newevent\' | translate">\n                <ion-icon name="add"></ion-icon>\n            </button>\n        </ion-fab>\n    </core-loading>\n</ion-content>\n'/*ion-inline-end:"/Users/allen/sourcetree/moodleapp382/src/addon/calendar/pages/day/day.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__providers_local_notifications__["a" /* CoreLocalNotificationsProvider */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_15__ionic_native_network__["a" /* Network */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgZone */],
+            __WEBPACK_IMPORTED_MODULE_5__providers_sites__["a" /* CoreSitesProvider */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["s" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_6__providers_utils_dom__["a" /* CoreDomUtilsProvider */],
+            __WEBPACK_IMPORTED_MODULE_7__providers_utils_time__["a" /* CoreTimeUtilsProvider */],
+            __WEBPACK_IMPORTED_MODULE_8__providers_calendar__["a" /* AddonCalendarProvider */],
+            __WEBPACK_IMPORTED_MODULE_9__providers_calendar_offline__["a" /* AddonCalendarOfflineProvider */],
+            __WEBPACK_IMPORTED_MODULE_10__providers_helper__["a" /* AddonCalendarHelperProvider */],
+            __WEBPACK_IMPORTED_MODULE_11__providers_calendar_sync__["a" /* AddonCalendarSyncProvider */],
+            __WEBPACK_IMPORTED_MODULE_3__providers_events__["a" /* CoreEventsProvider */],
+            __WEBPACK_IMPORTED_MODULE_12__core_courses_providers_courses__["a" /* CoreCoursesProvider */],
+            __WEBPACK_IMPORTED_MODULE_13__core_courses_providers_helper__["a" /* CoreCoursesHelperProvider */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_app__["a" /* CoreAppProvider */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["w" /* PopoverController */]])
+    ], AddonCalendarDayPage);
+    return AddonCalendarDayPage;
 }());
 
-//# sourceMappingURL=entries.module.js.map
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/action-sheet/action-sheet-component.ngfactory.js
-var action_sheet_component_ngfactory = __webpack_require__(1524);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/alert/alert-component.ngfactory.js
-var alert_component_ngfactory = __webpack_require__(1525);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app-root.ngfactory.js
-var app_root_ngfactory = __webpack_require__(1526);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/loading/loading-component.ngfactory.js
-var loading_component_ngfactory = __webpack_require__(1527);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal-component.ngfactory.js
-var modal_component_ngfactory = __webpack_require__(1528);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-component.ngfactory.js + 1 modules
-var picker_component_ngfactory = __webpack_require__(1529);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/popover/popover-component.ngfactory.js
-var popover_component_ngfactory = __webpack_require__(1530);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/select/select-popover-component.ngfactory.js
-var select_popover_component_ngfactory = __webpack_require__(1531);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toast/toast-component.ngfactory.js
-var toast_component_ngfactory = __webpack_require__(1532);
-
-// EXTERNAL MODULE: ./src/components/context-menu/context-menu-popover.ngfactory.js
-var context_menu_popover_ngfactory = __webpack_require__(1533);
-
-// EXTERNAL MODULE: ./src/components/course-picker-menu/course-picker-menu-popover.ngfactory.js
-var course_picker_menu_popover_ngfactory = __webpack_require__(1534);
-
-// EXTERNAL MODULE: ./src/components/recaptcha/recaptchamodal.ngfactory.js
-var recaptchamodal_ngfactory = __webpack_require__(1535);
-
-// EXTERNAL MODULE: ./src/components/bs-tooltip/bs-tooltip.ngfactory.js
-var bs_tooltip_ngfactory = __webpack_require__(1536);
-
-// EXTERNAL MODULE: ./src/core/comments/components/comments/comments.ngfactory.js
-var comments_ngfactory = __webpack_require__(484);
-
-// EXTERNAL MODULE: ./src/core/tag/components/feed/feed.ngfactory.js
-var feed_ngfactory = __webpack_require__(1542);
-
-// EXTERNAL MODULE: ./src/addon/blog/components/entries/entries.ngfactory.js
-var entries_ngfactory = __webpack_require__(1586);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-header.js
-var toolbar_header = __webpack_require__(375);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
-var config = __webpack_require__(8);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/view-controller.js
-var view_controller = __webpack_require__(39);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/navbar.ngfactory.js
-var navbar_ngfactory = __webpack_require__(725);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/navbar.js
-var navbar = __webpack_require__(214);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app.js + 3 modules
-var app = __webpack_require__(35);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-controller.js
-var nav_controller = __webpack_require__(21);
-
-// EXTERNAL MODULE: ./src/directives/back-button.ts
-var back_button = __webpack_require__(478);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform.js + 1 modules
-var platform = __webpack_require__(16);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.service.js
-var translate_service = __webpack_require__(17);
-
-// EXTERNAL MODULE: ./src/providers/events.ts
-var events = __webpack_require__(10);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.ngfactory.js
-var toolbar_title_ngfactory = __webpack_require__(726);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.js
-var toolbar_title = __webpack_require__(316);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar.js
-var toolbar = __webpack_require__(251);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.pipe.js
-var translate_pipe = __webpack_require__(25);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-item.js
-var toolbar_item = __webpack_require__(376);
-
-// EXTERNAL MODULE: ./src/addon/blog/components/entries/entries.ts
-var entries = __webpack_require__(527);
-
-// EXTERNAL MODULE: ./src/addon/blog/providers/blog.ts
-var blog = __webpack_require__(209);
-
-// EXTERNAL MODULE: ./src/providers/utils/dom.ts
-var dom = __webpack_require__(4);
-
-// EXTERNAL MODULE: ./src/core/user/providers/user.ts
-var user = __webpack_require__(46);
-
-// EXTERNAL MODULE: ./src/providers/sites.ts
-var sites = __webpack_require__(1);
-
-// EXTERNAL MODULE: ./src/providers/utils/utils.ts
-var utils = __webpack_require__(2);
-
-// EXTERNAL MODULE: ./src/core/comments/providers/comments.ts
-var comments = __webpack_require__(155);
-
-// EXTERNAL MODULE: ./src/core/tag/providers/tag.ts
-var tag = __webpack_require__(165);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-params.js
-var nav_params = __webpack_require__(70);
-
-// CONCATENATED MODULE: ./src/addon/blog/pages/entries/entries.ngfactory.js
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var styles_AddonBlogEntriesPage = [];
-var RenderType_AddonBlogEntriesPage = core["_29" /* ɵcrt */]({ encapsulation: 2, styles: styles_AddonBlogEntriesPage, data: {} });
-
-function View_AddonBlogEntriesPage_0(_l) { return core["_57" /* ɵvid */](0, [(_l()(), core["_31" /* ɵeld */](0, 0, null, null, 16, "ion-header", [], null, null, null, null, null)), core["_30" /* ɵdid */](1, 16384, null, 0, toolbar_header["a" /* Header */], [config["a" /* Config */], core["t" /* ElementRef */], core["V" /* Renderer */], [2, view_controller["a" /* ViewController */]]], null, null), (_l()(), core["_55" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_31" /* ɵeld */](3, 0, null, null, 12, "ion-navbar", [["class", "toolbar"], ["core-back-button", ""]], [[8, "hidden", 0], [2, "statusbar-padding", null]], null, null, navbar_ngfactory["b" /* View_Navbar_0 */], navbar_ngfactory["a" /* RenderType_Navbar */])), core["_30" /* ɵdid */](4, 49152, null, 0, navbar["a" /* Navbar */], [app["a" /* App */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]], config["a" /* Config */], core["t" /* ElementRef */], core["V" /* Renderer */]], null, null), core["_30" /* ɵdid */](5, 212992, null, 0, back_button["a" /* CoreBackButtonDirective */], [navbar["a" /* Navbar */], platform["a" /* Platform */], translate_service["a" /* TranslateService */], events["a" /* CoreEventsProvider */]], null, null), (_l()(), core["_55" /* ɵted */](-1, 3, ["\n        "])), (_l()(), core["_31" /* ɵeld */](7, 0, null, 3, 3, "ion-title", [], null, null, null, toolbar_title_ngfactory["b" /* View_ToolbarTitle_0 */], toolbar_title_ngfactory["a" /* RenderType_ToolbarTitle */])), core["_30" /* ɵdid */](8, 49152, null, 0, toolbar_title["a" /* ToolbarTitle */], [config["a" /* Config */], core["t" /* ElementRef */], core["V" /* Renderer */], [2, toolbar["a" /* Toolbar */]], [2, navbar["a" /* Navbar */]]], null, null), (_l()(), core["_55" /* ɵted */](9, 0, ["", ""])), core["_47" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_55" /* ɵted */](-1, 3, ["\n        "])), (_l()(), core["_31" /* ɵeld */](12, 0, null, 2, 2, "ion-buttons", [["end", ""]], null, null, null, null, null)), core["_30" /* ɵdid */](13, 16384, null, 1, toolbar_item["a" /* ToolbarItem */], [config["a" /* Config */], core["t" /* ElementRef */], core["V" /* Renderer */], [2, toolbar["a" /* Toolbar */]], [2, navbar["a" /* Navbar */]]], null, null), core["_52" /* ɵqud */](603979776, 1, { _buttons: 1 }), (_l()(), core["_55" /* ɵted */](-1, 3, ["\n    "])), (_l()(), core["_55" /* ɵted */](-1, null, ["\n"])), (_l()(), core["_55" /* ɵted */](-1, null, ["\n"])), (_l()(), core["_31" /* ɵeld */](18, 0, null, null, 1, "addon-blog-entries", [["class", "core-avoid-header"]], null, null, null, entries_ngfactory["c" /* View_AddonBlogEntriesComponent_0 */], entries_ngfactory["b" /* RenderType_AddonBlogEntriesComponent */])), core["_30" /* ɵdid */](19, 114688, null, 0, entries["a" /* AddonBlogEntriesComponent */], [blog["a" /* AddonBlogProvider */], dom["a" /* CoreDomUtilsProvider */], user["a" /* CoreUserProvider */], sites["a" /* CoreSitesProvider */], utils["a" /* CoreUtilsProvider */], comments["a" /* CoreCommentsProvider */], tag["a" /* CoreTagProvider */]], { userId: [0, "userId"], courseId: [1, "courseId"], cmId: [2, "cmId"], entryId: [3, "entryId"], groupId: [4, "groupId"], tagId: [5, "tagId"] }, null), (_l()(), core["_55" /* ɵted */](-1, null, ["\n"]))], function (_ck, _v) { var _co = _v.component; _ck(_v, 5, 0); var currVal_3 = _co.userId; var currVal_4 = _co.courseId; var currVal_5 = _co.cmId; var currVal_6 = _co.entryId; var currVal_7 = _co.groupId; var currVal_8 = _co.tagId; _ck(_v, 19, 0, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = core["_44" /* ɵnov */](_v, 4)._hidden; var currVal_1 = core["_44" /* ɵnov */](_v, 4)._sbPadding; _ck(_v, 3, 0, currVal_0, currVal_1); var currVal_2 = core["_56" /* ɵunv */](_v, 9, 0, core["_44" /* ɵnov */](_v, 10).transform(_co.title)); _ck(_v, 9, 0, currVal_2); }); }
-function View_AddonBlogEntriesPage_Host_0(_l) { return core["_57" /* ɵvid */](0, [(_l()(), core["_31" /* ɵeld */](0, 0, null, null, 1, "page-addon-blog-entries", [], null, null, null, View_AddonBlogEntriesPage_0, RenderType_AddonBlogEntriesPage)), core["_30" /* ɵdid */](1, 49152, null, 0, entries_AddonBlogEntriesPage, [nav_params["a" /* NavParams */]], null, null)], null, null); }
-var AddonBlogEntriesPageNgFactory = core["_27" /* ɵccf */]("page-addon-blog-entries", entries_AddonBlogEntriesPage, View_AddonBlogEntriesPage_Host_0, {}, {}, []);
-
-//# sourceMappingURL=entries.ngfactory.js.map
-// EXTERNAL MODULE: ./node_modules/@angular/common/esm5/common.js
-var common = __webpack_require__(7);
-
-// EXTERNAL MODULE: ./node_modules/@angular/forms/esm5/forms.js
-var esm5_forms = __webpack_require__(23);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.loader.js
-var translate_loader = __webpack_require__(371);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.compiler.js
-var translate_compiler = __webpack_require__(372);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.parser.js
-var translate_parser = __webpack_require__(374);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/missing-translation-handler.js
-var missing_translation_handler = __webpack_require__(373);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.store.js
-var translate_store = __webpack_require__(477);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/module.js
-var ionic_angular_module = __webpack_require__(724);
-
-// EXTERNAL MODULE: ./src/pipes/pipes.module.ts + 2 modules
-var pipes_module = __webpack_require__(108);
-
-// EXTERNAL MODULE: ./src/components/components.module.ts
-var components_components_module = __webpack_require__(28);
-
-// EXTERNAL MODULE: ./src/core/comments/components/components.module.ts
-var comments_components_components_module = __webpack_require__(378);
-
-// EXTERNAL MODULE: ./src/core/tag/components/components.module.ts
-var tag_components_components_module = __webpack_require__(277);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/util/module-loader.js
-var module_loader = __webpack_require__(274);
-
-// CONCATENATED MODULE: ./src/addon/blog/pages/entries/entries.module.ngfactory.js
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonBlogEntriesPageModuleNgFactory", function() { return AddonBlogEntriesPageModuleNgFactory; });
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var AddonBlogEntriesPageModuleNgFactory = core["_28" /* ɵcmf */](entries_module_AddonBlogEntriesPageModule, [], function (_l) { return core["_40" /* ɵmod */]([core["_41" /* ɵmpd */](512, core["o" /* ComponentFactoryResolver */], core["_21" /* ɵCodegenComponentFactoryResolver */], [[8, [action_sheet_component_ngfactory["a" /* ActionSheetCmpNgFactory */], alert_component_ngfactory["a" /* AlertCmpNgFactory */], app_root_ngfactory["a" /* IonicAppNgFactory */], loading_component_ngfactory["a" /* LoadingCmpNgFactory */], modal_component_ngfactory["a" /* ModalCmpNgFactory */], picker_component_ngfactory["a" /* PickerCmpNgFactory */], popover_component_ngfactory["a" /* PopoverCmpNgFactory */], select_popover_component_ngfactory["a" /* SelectPopoverNgFactory */], toast_component_ngfactory["a" /* ToastCmpNgFactory */], context_menu_popover_ngfactory["a" /* CoreContextMenuPopoverComponentNgFactory */], course_picker_menu_popover_ngfactory["a" /* CoreCoursePickerMenuPopoverComponentNgFactory */], recaptchamodal_ngfactory["a" /* CoreRecaptchaModalComponentNgFactory */], bs_tooltip_ngfactory["a" /* CoreBSTooltipComponentNgFactory */], comments_ngfactory["a" /* CoreCommentsCommentsComponentNgFactory */], feed_ngfactory["a" /* CoreTagFeedComponentNgFactory */], entries_ngfactory["a" /* AddonBlogEntriesComponentNgFactory */], AddonBlogEntriesPageNgFactory]], [3, core["o" /* ComponentFactoryResolver */]], core["K" /* NgModuleRef */]]), core["_41" /* ɵmpd */](4608, common["m" /* NgLocalization */], common["l" /* NgLocaleLocalization */], [core["G" /* LOCALE_ID */], [2, common["w" /* ɵa */]]]), core["_41" /* ɵmpd */](4608, esm5_forms["x" /* ɵi */], esm5_forms["x" /* ɵi */], []), core["_41" /* ɵmpd */](4608, esm5_forms["d" /* FormBuilder */], esm5_forms["d" /* FormBuilder */], []), core["_41" /* ɵmpd */](4608, translate_loader["b" /* TranslateLoader */], translate_loader["a" /* TranslateFakeLoader */], []), core["_41" /* ɵmpd */](4608, translate_compiler["a" /* TranslateCompiler */], translate_compiler["b" /* TranslateFakeCompiler */], []), core["_41" /* ɵmpd */](4608, translate_parser["b" /* TranslateParser */], translate_parser["a" /* TranslateDefaultParser */], []), core["_41" /* ɵmpd */](4608, missing_translation_handler["b" /* MissingTranslationHandler */], missing_translation_handler["a" /* FakeMissingTranslationHandler */], []), core["_41" /* ɵmpd */](4608, translate_service["a" /* TranslateService */], translate_service["a" /* TranslateService */], [translate_store["a" /* TranslateStore */], translate_loader["b" /* TranslateLoader */], translate_compiler["a" /* TranslateCompiler */], translate_parser["b" /* TranslateParser */], missing_translation_handler["b" /* MissingTranslationHandler */], translate_service["b" /* USE_DEFAULT_LANG */], translate_service["c" /* USE_STORE */]]), core["_41" /* ɵmpd */](512, directives_module["a" /* CoreDirectivesModule */], directives_module["a" /* CoreDirectivesModule */], []), core["_41" /* ɵmpd */](512, common["b" /* CommonModule */], common["b" /* CommonModule */], []), core["_41" /* ɵmpd */](512, esm5_forms["v" /* ɵba */], esm5_forms["v" /* ɵba */], []), core["_41" /* ɵmpd */](512, esm5_forms["i" /* FormsModule */], esm5_forms["i" /* FormsModule */], []), core["_41" /* ɵmpd */](512, esm5_forms["s" /* ReactiveFormsModule */], esm5_forms["s" /* ReactiveFormsModule */], []), core["_41" /* ɵmpd */](512, ionic_angular_module["a" /* IonicModule */], ionic_angular_module["a" /* IonicModule */], []), core["_41" /* ɵmpd */](512, _ngx_translate_core["b" /* TranslateModule */], _ngx_translate_core["b" /* TranslateModule */], []), core["_41" /* ɵmpd */](512, pipes_module["a" /* CorePipesModule */], pipes_module["a" /* CorePipesModule */], []), core["_41" /* ɵmpd */](512, components_components_module["a" /* CoreComponentsModule */], components_components_module["a" /* CoreComponentsModule */], []), core["_41" /* ɵmpd */](512, comments_components_components_module["a" /* CoreCommentsComponentsModule */], comments_components_components_module["a" /* CoreCommentsComponentsModule */], []), core["_41" /* ɵmpd */](512, tag_components_components_module["a" /* CoreTagComponentsModule */], tag_components_components_module["a" /* CoreTagComponentsModule */], []), core["_41" /* ɵmpd */](512, components_module["a" /* AddonBlogComponentsModule */], components_module["a" /* AddonBlogComponentsModule */], []), core["_41" /* ɵmpd */](512, ionic_angular_module["b" /* IonicPageModule */], ionic_angular_module["b" /* IonicPageModule */], []), core["_41" /* ɵmpd */](512, entries_module_AddonBlogEntriesPageModule, entries_module_AddonBlogEntriesPageModule, []), core["_41" /* ɵmpd */](256, translate_service["c" /* USE_STORE */], undefined, []), core["_41" /* ɵmpd */](256, translate_service["b" /* USE_DEFAULT_LANG */], undefined, []), core["_41" /* ɵmpd */](256, module_loader["a" /* LAZY_LOADED_TOKEN */], entries_AddonBlogEntriesPage, [])]); });
-
-//# sourceMappingURL=entries.module.ngfactory.js.map
+//# sourceMappingURL=day.js.map
 
 /***/ })
 
