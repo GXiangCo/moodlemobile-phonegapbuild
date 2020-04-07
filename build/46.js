@@ -103,7 +103,7 @@ var CoreGradesCoursePage = /** @class */ (function () {
     }
     CoreGradesCoursePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-core-grades-course',template:/*ion-inline-start:"/Users/allen/sourcetree/moodleapp382/src/core/grades/pages/course/course.html"*/'<ion-header>\n    <ion-navbar core-back-button>\n        <ion-title>{{ \'core.grades.grades\' | translate }}</ion-title>\n    </ion-navbar>\n</ion-header>\n<core-grades-course class="core-avoid-header" [courseId]="courseId" [userId]="userId"></core-grades-course>\n'/*ion-inline-end:"/Users/allen/sourcetree/moodleapp382/src/core/grades/pages/course/course.html"*/,
+            selector: 'page-core-grades-course',template:/*ion-inline-start:"/Users/allen/sourcetree/moodleapp-m3/src/core/grades/pages/course/course.html"*/'<ion-header>\n    <ion-navbar core-back-button>\n        <ion-title>{{ \'core.grades.grades\' | translate }}</ion-title>\n    </ion-navbar>\n</ion-header>\n<core-grades-course class="core-avoid-header" [courseId]="courseId" [userId]="userId"></core-grades-course>\n'/*ion-inline-end:"/Users/allen/sourcetree/moodleapp-m3/src/core/grades/pages/course/course.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_sites__["a" /* CoreSitesProvider */]])
     ], CoreGradesCoursePage);

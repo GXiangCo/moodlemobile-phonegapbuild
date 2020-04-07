@@ -1,6 +1,6 @@
 webpackJsonp([91],{
 
-/***/ 1994:
+/***/ 1993:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11,7 +11,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_directives_module__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_components_module__ = __webpack_require__(1021);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__index__ = __webpack_require__(2144);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__index__ = __webpack_require__(2143);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -60,7 +60,7 @@ var AddonModImscpIndexPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2144:
+/***/ 2143:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -116,7 +116,7 @@ var AddonModImscpIndexPage = /** @class */ (function () {
     ], AddonModImscpIndexPage.prototype, "imscpComponent", void 0);
     AddonModImscpIndexPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-mod-imscp-index',template:/*ion-inline-start:"/Users/allen/sourcetree/moodleapp382/src/addon/mod/imscp/pages/index/index.html"*/'<ion-header>\n    <ion-navbar core-back-button>\n        <ion-title><core-format-text [text]="title" contextLevel="module" [contextInstanceId]="module.id" [courseId]="courseId"></core-format-text></ion-title>\n\n        <ion-buttons end>\n            <!-- The buttons defined by the component will be added in here. -->\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n    <addon-mod-imscp-index [module]="module" [courseId]="courseId" (dataRetrieved)="updateData($event)"></addon-mod-imscp-index>\n</ion-content>\n'/*ion-inline-end:"/Users/allen/sourcetree/moodleapp382/src/addon/mod/imscp/pages/index/index.html"*/,
+            selector: 'page-addon-mod-imscp-index',template:/*ion-inline-start:"/Users/allen/sourcetree/moodleapp-m3/src/addon/mod/imscp/pages/index/index.html"*/'<ion-header>\n    <ion-navbar core-back-button>\n        <ion-title><core-format-text [text]="title" contextLevel="module" [contextInstanceId]="module.id" [courseId]="courseId"></core-format-text></ion-title>\n\n        <ion-buttons end>\n            <!-- The buttons defined by the component will be added in here. -->\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n    <addon-mod-imscp-index [module]="module" [courseId]="courseId" (dataRetrieved)="updateData($event)"></addon-mod-imscp-index>\n</ion-content>\n'/*ion-inline-end:"/Users/allen/sourcetree/moodleapp-m3/src/addon/mod/imscp/pages/index/index.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */]])
     ], AddonModImscpIndexPage);

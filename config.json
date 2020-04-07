@@ -1,7 +1,7 @@
 {
-    "app_id": "tw.edu.weteach.m3moodlemobile",
-    "appname": "合作備課",
-    "desktopappname": "合作備課",
+    "app_id": "tw.edu.hcc.m3",
+    "appname": "米立雲",
+    "desktopappname": "米立雲",
     "versioncode": 3820,
     "versionname": "3.8.2",
     "cache_update_frequency_usually": 420000,
@@ -60,7 +60,7 @@
     "wsservice": "moodle_mobile_app",
     "wsextservice": "local_mobile",
     "demo_sites": {
-        
+
     },
     "font_sizes": [
         62.5,
@@ -68,8 +68,8 @@
         93.75
     ],
     "customurlscheme": "moodlemobile",
-    "siteurl": "https:\/\/weteach.edu.tw",
-    "sitename": "合作備課",
+    "siteurl": "https://m3.hcc.edu.tw",
+    "sitename": "",
     "multisitesdisplay": "",
     "skipssoconfirmation": false,
     "forcedefaultlanguage": false,

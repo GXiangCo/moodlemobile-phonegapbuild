@@ -1,6 +1,6 @@
 webpackJsonp([110],{
 
-/***/ 1981:
+/***/ 1980:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11,7 +11,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_directives_module__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_components_module__ = __webpack_require__(1012);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__index__ = __webpack_require__(2131);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__index__ = __webpack_require__(2130);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -60,7 +60,7 @@ var AddonModChoiceIndexPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2131:
+/***/ 2130:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -116,7 +116,7 @@ var AddonModChoiceIndexPage = /** @class */ (function () {
     ], AddonModChoiceIndexPage.prototype, "choiceComponent", void 0);
     AddonModChoiceIndexPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-mod-choice-index',template:/*ion-inline-start:"/Users/allen/sourcetree/moodleapp382/src/addon/mod/choice/pages/index/index.html"*/'<ion-header>\n    <ion-navbar core-back-button>\n        <ion-title><core-format-text [text]="title" contextLevel="module" [contextInstanceId]="module.id" [courseId]="courseId"></core-format-text></ion-title>\n\n        <ion-buttons end>\n            <!-- The buttons defined by the component will be added in here. -->\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n    <ion-refresher [enabled]="choiceComponent.loaded" (ionRefresh)="choiceComponent.doRefresh($event)">\n        <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n    </ion-refresher>\n\n    <addon-mod-choice-index [module]="module" [courseId]="courseId" (dataRetrieved)="updateData($event)"></addon-mod-choice-index>\n</ion-content>\n'/*ion-inline-end:"/Users/allen/sourcetree/moodleapp382/src/addon/mod/choice/pages/index/index.html"*/,
+            selector: 'page-addon-mod-choice-index',template:/*ion-inline-start:"/Users/allen/sourcetree/moodleapp-m3/src/addon/mod/choice/pages/index/index.html"*/'<ion-header>\n    <ion-navbar core-back-button>\n        <ion-title><core-format-text [text]="title" contextLevel="module" [contextInstanceId]="module.id" [courseId]="courseId"></core-format-text></ion-title>\n\n        <ion-buttons end>\n            <!-- The buttons defined by the component will be added in here. -->\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n    <ion-refresher [enabled]="choiceComponent.loaded" (ionRefresh)="choiceComponent.doRefresh($event)">\n        <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n    </ion-refresher>\n\n    <addon-mod-choice-index [module]="module" [courseId]="courseId" (dataRetrieved)="updateData($event)"></addon-mod-choice-index>\n</ion-content>\n'/*ion-inline-end:"/Users/allen/sourcetree/moodleapp-m3/src/addon/mod/choice/pages/index/index.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */]])
     ], AddonModChoiceIndexPage);

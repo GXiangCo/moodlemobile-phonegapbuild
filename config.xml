@@ -2,19 +2,19 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
-        id        = "tw.edu.weteach.m3moodlemobile"
+        id        = "tw.edu.hcc.m3"
         versionCode = "38200"
         android-versionCode = "38201"
         ios-CFBundleVersion = "3.8.2.1"
         version   = "3.8.2">
-    <name>合作備課</name>
+    <name>米立雲</name>
 
     <description>
-        M3教育雲 合作備課 App
+        米立雲遊學樂園
     </description>
 
-    <author href="http://moodle.com" email="mobile@moodle.com">
-        Moodle Mobile team
+    <author href="http://m3.hcc.edu.tw" email="go38@gmail.com">
+        Go38 team
     </author>
 
     <edit-config target="CFBundleShortVersionString" file="*-Info.plist" mode="merge">

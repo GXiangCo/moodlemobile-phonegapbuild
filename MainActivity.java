@@ -14,7 +14,7 @@
 
 // Based on the template node_modules/cordova-android/bin/templates/project/Activity.java
 
-package tw.edu.weteach.m3moodlemobile;
+package tw.edu.hcc.m3;
 
 import android.os.Bundle;
 import android.view.KeyEvent;

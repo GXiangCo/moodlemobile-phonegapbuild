@@ -101,7 +101,7 @@ var AddonNotesListPage = /** @class */ (function () {
     }
     AddonNotesListPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-notes-list-page',template:/*ion-inline-start:"/Users/allen/sourcetree/moodleapp382/src/addon/notes/pages/list/list.html"*/'<ion-header>\n    <ion-navbar core-back-button>\n        <ion-title>{{ \'addon.notes.notes\' | translate }}</ion-title>\n        <ion-buttons end></ion-buttons>\n    </ion-navbar>\n</ion-header>\n<addon-notes-list class="core-avoid-header" [courseId]="courseId" [userId]="userId"></addon-notes-list>\n'/*ion-inline-end:"/Users/allen/sourcetree/moodleapp382/src/addon/notes/pages/list/list.html"*/,
+            selector: 'page-addon-notes-list-page',template:/*ion-inline-start:"/Users/allen/sourcetree/moodleapp-m3/src/addon/notes/pages/list/list.html"*/'<ion-header>\n    <ion-navbar core-back-button>\n        <ion-title>{{ \'addon.notes.notes\' | translate }}</ion-title>\n        <ion-buttons end></ion-buttons>\n    </ion-navbar>\n</ion-header>\n<addon-notes-list class="core-avoid-header" [courseId]="courseId" [userId]="userId"></addon-notes-list>\n'/*ion-inline-end:"/Users/allen/sourcetree/moodleapp-m3/src/addon/notes/pages/list/list.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */]])
     ], AddonNotesListPage);

@@ -1,6 +1,6 @@
 webpackJsonp([122],{
 
-/***/ 1973:
+/***/ 1972:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonModAssignEditFeedbackModalPageModule", function() { return AddonModAssignEditFeedbackModalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__edit_feedback_modal__ = __webpack_require__(2123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__edit_feedback_modal__ = __webpack_require__(2122);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_components_module__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directives_directives_module__ = __webpack_require__(14);
@@ -63,7 +63,7 @@ var AddonModAssignEditFeedbackModalPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2123:
+/***/ 2122:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -247,7 +247,7 @@ var AddonModAssignEditFeedbackModalPage = /** @class */ (function () {
     ], AddonModAssignEditFeedbackModalPage.prototype, "formElement", void 0);
     AddonModAssignEditFeedbackModalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-mod-assign-edit-feedback-modal',template:/*ion-inline-start:"/Users/allen/sourcetree/moodleapp382/src/addon/mod/assign/pages/edit-feedback-modal/edit-feedback-modal.html"*/'<ion-header>\n    <ion-navbar core-back-button>\n        <ion-title>{{ plugin.name }}</ion-title>\n        <ion-buttons end>\n            <button ion-button icon-only (click)="closeModal()" [attr.aria-label]="\'core.close\' | translate">\n                <ion-icon name="close"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n    <form name="addon-mod_assign-edit-feedback-form" *ngIf="userId && plugin" #editFeedbackForm>\n        <addon-mod-assign-feedback-plugin [assign]="assign" [submission]="submission" [userId]="userId" [plugin]="plugin" [edit]="true"></addon-mod-assign-feedback-plugin>\n        <button ion-button block (click)="done($event)">{{ \'core.done\' | translate }}</button>\n    </form>\n</ion-content>\n'/*ion-inline-end:"/Users/allen/sourcetree/moodleapp382/src/addon/mod/assign/pages/edit-feedback-modal/edit-feedback-modal.html"*/,
+            selector: 'page-addon-mod-assign-edit-feedback-modal',template:/*ion-inline-start:"/Users/allen/sourcetree/moodleapp-m3/src/addon/mod/assign/pages/edit-feedback-modal/edit-feedback-modal.html"*/'<ion-header>\n    <ion-navbar core-back-button>\n        <ion-title>{{ plugin.name }}</ion-title>\n        <ion-buttons end>\n            <button ion-button icon-only (click)="closeModal()" [attr.aria-label]="\'core.close\' | translate">\n                <ion-icon name="close"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n    <form name="addon-mod_assign-edit-feedback-form" *ngIf="userId && plugin" #editFeedbackForm>\n        <addon-mod-assign-feedback-plugin [assign]="assign" [submission]="submission" [userId]="userId" [plugin]="plugin" [edit]="true"></addon-mod-assign-feedback-plugin>\n        <button ion-button block (click)="done($event)">{{ \'core.done\' | translate }}</button>\n    </form>\n</ion-content>\n'/*ion-inline-end:"/Users/allen/sourcetree/moodleapp-m3/src/addon/mod/assign/pages/edit-feedback-modal/edit-feedback-modal.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["G" /* ViewController */],

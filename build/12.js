@@ -1,6 +1,6 @@
 webpackJsonp([12],{
 
-/***/ 2055:
+/***/ 2056:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11,7 +11,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(420);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__participants__ = __webpack_require__(2205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__participants__ = __webpack_require__(2206);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -60,7 +60,7 @@ var CoreUserParticipantsPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2205:
+/***/ 2206:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -100,7 +100,7 @@ var CoreUserParticipantsPage = /** @class */ (function () {
     }
     CoreUserParticipantsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-core-user-participants',template:/*ion-inline-start:"/Users/allen/sourcetree/moodleapp382/src/core/user/pages/participants/participants.html"*/'<ion-header>\n    <ion-navbar core-back-button>\n        <ion-title>{{ \'core.user.participants\' | translate }}</ion-title>\n    </ion-navbar>\n</ion-header>\n<core-user-participants [courseId]="courseId"></core-user-participants>'/*ion-inline-end:"/Users/allen/sourcetree/moodleapp382/src/core/user/pages/participants/participants.html"*/,
+            selector: 'page-core-user-participants',template:/*ion-inline-start:"/Users/allen/sourcetree/moodleapp-m3/src/core/user/pages/participants/participants.html"*/'<ion-header>\n    <ion-navbar core-back-button>\n        <ion-title>{{ \'core.user.participants\' | translate }}</ion-title>\n    </ion-navbar>\n</ion-header>\n<core-user-participants [courseId]="courseId"></core-user-participants>'/*ion-inline-end:"/Users/allen/sourcetree/moodleapp-m3/src/core/user/pages/participants/participants.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */]])
     ], CoreUserParticipantsPage);

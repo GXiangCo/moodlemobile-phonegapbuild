@@ -1,6 +1,6 @@
 webpackJsonp([18],{
 
-/***/ 2051:
+/***/ 2050:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10,7 +10,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_directives_module__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__module_index__ = __webpack_require__(2201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__module_index__ = __webpack_require__(2200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(1002);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
@@ -63,7 +63,7 @@ var CoreSitePluginsModuleIndexPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2201:
+/***/ 2200:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -159,7 +159,7 @@ var CoreSitePluginsModuleIndexPage = /** @class */ (function () {
     ], CoreSitePluginsModuleIndexPage.prototype, "content", void 0);
     CoreSitePluginsModuleIndexPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-core-site-plugins-module-index',template:/*ion-inline-start:"/Users/allen/sourcetree/moodleapp382/src/core/siteplugins/pages/module-index/module-index.html"*/'<ion-header>\n    <ion-navbar core-back-button>\n        <ion-title>{{ title }}</ion-title>\n\n        <ion-buttons end>\n            <!-- If the site plugin defines some buttons using core-nav-buttons, they will be added here. -->\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n    <ion-refresher [enabled]="content && content.content && content.content.dataLoaded" (ionRefresh)="refreshData($event)">\n        <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n    </ion-refresher>\n    <core-site-plugins-module-index [module]="module" [courseId]="courseId" [pageTitle]="title"></core-site-plugins-module-index>\n</ion-content>\n'/*ion-inline-end:"/Users/allen/sourcetree/moodleapp382/src/core/siteplugins/pages/module-index/module-index.html"*/,
+            selector: 'page-core-site-plugins-module-index',template:/*ion-inline-start:"/Users/allen/sourcetree/moodleapp-m3/src/core/siteplugins/pages/module-index/module-index.html"*/'<ion-header>\n    <ion-navbar core-back-button>\n        <ion-title>{{ title }}</ion-title>\n\n        <ion-buttons end>\n            <!-- If the site plugin defines some buttons using core-nav-buttons, they will be added here. -->\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n    <ion-refresher [enabled]="content && content.content && content.content.dataLoaded" (ionRefresh)="refreshData($event)">\n        <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n    </ion-refresher>\n    <core-site-plugins-module-index [module]="module" [courseId]="courseId" [pageTitle]="title"></core-site-plugins-module-index>\n</ion-content>\n'/*ion-inline-end:"/Users/allen/sourcetree/moodleapp-m3/src/core/siteplugins/pages/module-index/module-index.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */]])
     ], CoreSitePluginsModuleIndexPage);
