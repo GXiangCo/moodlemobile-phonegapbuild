@@ -4,8 +4,8 @@
         xmlns:android = "http://schemas.android.com/apk/res/android"
         id        = "tw.edu.hcc.m3"
         versionCode = "38200"
-        android-versionCode = "38201"
-        ios-CFBundleVersion = "3.8.2.1"
+        android-versionCode = "38202"
+        ios-CFBundleVersion = "3.8.2.2"
         version   = "3.8.2">
     <name>米立雲</name>
 
