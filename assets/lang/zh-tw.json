@@ -1560,7 +1560,7 @@
     "core.login.visitchangepassword": "您需要去拜訪這個網站變更密碼嗎?",
     "core.login.webservicesnotenabled": "您的網站沒有啟用Web服務。如果您想用行動裝置連線，請聯繫您的Moodle網站管理員。",
     "core.lostconnection": "我們已斷了線，您需重新連線。您的口令目前是無效的。",
-    "core.mainmenu.changesite": "更換網站",
+    "core.mainmenu.changesite": "登出",
     "core.mainmenu.help": "輔助說明",
     "core.mainmenu.logout": "登出",
     "core.mainmenu.website": "網站",
